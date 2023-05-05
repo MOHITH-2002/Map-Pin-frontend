@@ -1,0 +1,364 @@
+.card{
+    background: white;
+    width: 230px;
+    height: 230px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+
+
+label{
+    color: #F48484;
+    border-bottom: 0.8px solid red;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0px;
+    
+    
+}
+p{
+    font-size: 14px;
+}
+.star{
+    color:gold;
+}
+span{
+    font-size: 13px;
+    margin:2px 2px;
+}
+
+}
+.inputPop{
+    form{
+        width:230px;
+        height:230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        label{
+            color: #F48484;
+            border-bottom: 0.8px solid red;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 5px 0px;
+            width:max-content;
+            
+            
+        }
+        input{
+            border:none;
+            border-bottom: 1px solid gray;
+        }
+        textarea{
+            border:none;
+            border-bottom: 1px solid gray;
+        }
+        button{
+            background-color:burlywood;
+            border:none;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            padding: 5px;
+            margin-top:7px;
+            transition-duration: 1000ms;
+        }
+        button:hover{
+            background-color:#F48484;
+            color: white;
+            border-radius: 5px;
+        }
+        
+
+
+    }
+
+}
+.navbar{
+    // background-color:transparent;
+    background-color: aliceblue;
+    // margin:10px 10px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .iconFig{
+     
+    .icon{
+        color:red;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+    }
+    .icon:hover{
+        color:#0081B4;
+    }
+    h3{ padding-top: 5px;
+        padding-left: 5px;
+        color:#F48484;
+        font-size: 22px;
+    }
+    h3:hover{
+        color:#0081B4;
+        cursor:pointer;
+
+    }
+}
+    .container{
+       
+    .btn{
+        border:none;
+        padding:8px;
+        margin:0px 10px;
+        cursor: pointer;
+    }
+    .logout{
+        background-color:#F48484;
+        transition-duration: 1000ms;
+       
+        
+    }
+    .logout:hover{
+        background-color:red;
+        color:white;
+        border-radius: 10px;
+    }
+    .login{
+        background-color:#03C988;
+        transition-duration: 1000ms;
+    }
+    .login:hover{
+        background-color:#1F8A70;
+        color:white;
+        border-radius: 10px;
+    }
+    .register{
+        background-color:#AA8B56;
+        transition-duration: 1000ms;
+    }
+    .register:hover{
+        background-color:#665A48;
+        color:white;
+        border-radius: 10px;
+    }
+    // .buttons,.logout{
+    //     position:absolute;
+
+    // }
+}
+    
+}
+
+
+
+//// register
+/// 
+
+.regCont{
+    
+ 
+    background-color: aliceblue;
+    width:400px;
+    height:250px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 400px;
+    border-radius: 10px;
+    .cancel{
+        color:#03C988;
+        cursor: pointer;
+        margin-left: 380px;
+
+    }
+    .cancel:hover{
+        color: #1F8A70;
+
+    }
+    
+    .logo{
+        .icon{
+            margin-top: 10px;
+            color:red;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+        }
+        .icon:hover{
+            color:#0081B4;
+        }
+        margin-bottom: 10px;
+        
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+      
+   
+        
+    input{
+        width:200px;
+
+        border:none;
+        padding:5px;
+        margin:5px;
+        border-bottom: 1px solid #AA8B56;
+    }
+    button{
+        margin-top: 10px;
+        padding:5px;
+        background:#F48484;
+        border: none;
+        transition-duration: 1000ms;
+    }
+    button:hover{
+        border-radius: 10px;
+        background-color: #AA8B56;
+        color: white;
+        cursor: pointer;
+    }
+    .success{
+        margin-top: 10px;
+        font-weight: bold;
+        color: green;
+        font-size: 14px;
+    }
+    .failure{
+        font-weight: bold;
+        color:red;
+        font-size: 14px;
+    }
+}
+
+}
+
+.LoginCont{
+
+    background-color: aliceblue;
+    width:400px;
+    height:220px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 400px;
+    border-radius: 10px;
+    
+    
+    .logo{
+        .icon{
+            margin-top: 10px;
+            color:red;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+        }
+        .icon:hover{
+            color:#0081B4;
+        }
+        margin-bottom: 10px;
+        
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+      
+   
+        
+    input{
+        width:200px;
+
+        border:none;
+        padding:5px;
+        margin:5px;
+        border-bottom: 1px solid #AA8B56;
+    }
+    button{
+        margin-top: 10px;
+        padding:5px;
+        background:#03C988;
+        border: none;
+    }
+    button:hover{
+        border-radius: 10px;
+        background-color: #1F8A70;
+        color: white;
+        cursor: pointer;
+    }
+    
+    
+    
+    }
+    .cancel{
+        color:#03C988;
+        cursor: pointer;
+        margin-left: 380px;
+
+    }
+    .cancel:hover{
+        color: #1F8A70;
+
+    }
+    .failure{
+        font-weight: bold;
+        color:red;
+        font-size: 14px;
+     
+    }
+}
+@media screen and (max-width:700px){
+    .navbar{
+        h3{
+            display: none;
+        }
+    }
+    .regCont{
+       
+            margin-left:0px;
+            width:300px;
+            align-items: center;
+            display: flex;
+            margin-top:20px;
+            position: relative;
+            justify-content: center;
+            .cancel{
+                margin-left: 280px;
+                position: absolute;
+                margin-bottom: 230px;
+               
+                
+            }
+            
+    
+    
+        
+    }
+    .LoginCont{
+        .logo{
+            .icon{
+                margin-top: 0px;
+            }
+        }
+        margin-left:0px;
+        width:300px;
+        align-items: center;
+        height:200px;
+        display: flex;
+        margin-top:20px;
+        justify-content: center;
+        position: relative;
+        .cancel{
+            margin-left: 280px;
+            margin-bottom: 180px;
+            position:absolute;
+            
+            
+        }
+        
+
+
+    }
+}

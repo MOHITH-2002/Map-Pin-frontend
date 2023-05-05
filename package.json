@@ -3,12 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.4",
+    "mapbox-gl": "^2.12.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-map-gl": "^7.0.21",
+    "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
+    "sass": "^1.57.1",
+    "scss": "^0.2.4",
+    "timeago.js": "^4.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +48,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "proxy": "http://localhost:8800",
+  "devDependencies": {
+    "babel-plugin-react-html-attrs": "^3.0.5"
   }
 }
