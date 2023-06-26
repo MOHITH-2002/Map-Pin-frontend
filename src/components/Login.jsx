@@ -1,12 +1,11 @@
 import {React,useState,useRef} from 'react'
 import axios from 'axios';
-import CancelIcon from '@mui/icons-material/Cancel';
+
 
 import "../style.scss";
-// import { useNavigate } from 'react-router-dom';
 
 const Login = ({setShowLogin,myStorage,SetCurrentUser}) => {
-  // const navigate = useNavigate();
+
   
   const[failure,setFailure] = useState(false);
   const nameRef = useRef();
@@ -28,7 +27,7 @@ const Login = ({setShowLogin,myStorage,SetCurrentUser}) => {
      myStorage.setItem("User",res.data.username);
      SetCurrentUser(res.data.username);
      setShowLogin(false);
-    //  navigate('/');
+    
 
  
       
@@ -42,7 +41,9 @@ const Login = ({setShowLogin,myStorage,SetCurrentUser}) => {
   return (
      
     <div className="LoginCont">
-<CancelIcon className="cancel"  onClick={()=>setShowLogin(false)} />
+
+
+<i className="fa-solid fa-x cancel" onClick={()=>setShowLogin(false)}></i>
     <div className="logo">
     <i class="fa-solid fa-location-dot fa-1.5x icon"  >
 <h3>Map-Pin</h3>

@@ -1,7 +1,7 @@
 import {React,useEffect,useState }from 'react';
-// import {render} from 'react-dom';
+
 import {Map,Marker,Popup} from 'react-map-gl';
-import StarIcon from '@mui/icons-material/Star';
+
 import 'mapbox-gl/dist/mapbox-gl.css';
 import "../style.scss";
 import axios from 'axios';
@@ -170,7 +170,8 @@ const handleAddClick = ar =>{
         <label>Rating</label>
         <div className='stars'>
         {Array(p.rating).fill(
-        <StarIcon className='star'/>)}
+          <i className="fa-solid fa-star star"></i>)}
+       
         
         </div>
         <label>Information</label>

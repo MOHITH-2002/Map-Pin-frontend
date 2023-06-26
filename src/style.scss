@@ -21,6 +21,8 @@ p{
 }
 .star{
     color:gold;
+    margin-right: 5px;
+    
 }
 span{
     font-size: 13px;
@@ -168,13 +170,17 @@ span{
     margin-left: 400px;
     border-radius: 10px;
     .cancel{
-        color:#03C988;
+        color:white;
         cursor: pointer;
         margin-left: 380px;
+        background-color: #03C988;
+        padding: 4px;
+        border-radius:50%;
 
     }
     .cancel:hover{
-        color: #1F8A70;
+        color: white;
+        background-color: lightcoral;
 
     }
     
@@ -293,13 +299,17 @@ span{
     
     }
     .cancel{
-        color:#03C988;
+        color:white;
         cursor: pointer;
         margin-left: 380px;
+        background-color: #03C988;
+        padding: 4px;
+        border-radius:50%;
 
     }
     .cancel:hover{
-        color: #1F8A70;
+        color: white;
+        background-color: lightcoral;
 
     }
     .failure{
