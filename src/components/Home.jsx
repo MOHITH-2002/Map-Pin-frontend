@@ -156,7 +156,7 @@ const handleAddClick = ar =>{
 
        { pin._id === curPin  && (
 
-      <Popup  longitude={p.long} latitude={p.lat} 
+      <Popup  longitude={pin.long} latitude={pin.lat} 
         closeButton={true}//this are must othe wise pop window will not exucute
         closeOnClick={false}//this are must othe wise pop window will not exucute
         onClose={() => SetCurPin(null)}
