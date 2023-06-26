@@ -144,17 +144,17 @@ const handleAddClick = ar =>{
       mapboxAccessToken={process.env.REACT_APP_MAP}
       onDblClick={handleAddClick}>
    
-    {pins.map((p)=>( 
+    {pins.map((pin)=>( 
     <>
-      <Marker longitude={p.long} latitude={p.lat} 
+      <Marker longitude={pin.long} latitude={pin.lat} 
 
-      color={p.username === currentUser ? "red" : "#0081B4"  }
-      onClick={()=>handleMarkerClick(p._id , p.lat , p.long)}
+      color={pin.username === currentUser ? "red" : "#0081B4"  }
+      onClick={()=>handleMarkerClick(pin._id , pin.lat , pin.long)}
       >
       
        </Marker>   
 
-       { p._id === curPin  && (
+       { pin._id === curPin  && (
 
       <Popup  longitude={p.long} latitude={p.lat} 
         closeButton={true}//this are must othe wise pop window will not exucute
@@ -164,19 +164,19 @@ const handleAddClick = ar =>{
         anchor="left">
         <div className='card'>
         <label>Place</label>
-        <h3 className='place'>{p.title}</h3>
+        <h3 className='place'>{pin.title}</h3>
         <label>Review </label>
-        <p>{p.disc}</p>
+        <p>{pin.disc}</p>
         <label>Rating</label>
         <div className='stars'>
-        {Array(p.rating).fill(
+        {Array(pin.rating).fill(
           <i className="fa-solid fa-star star"></i>)}
        
         
         </div>
         <label>Information</label>
-        <span className='username'>created by <b>{p.username}</b></span>
-        <span className='date'> {format(p.createdAt)}</span>
+        <span className='username'>created by <b>{pin.username}</b></span>
+        <span className='date'> {format(pin.createdAt)}</span>
          {/* in db createdAt is present when we use timestamps at mongoose.model*/}
 
 
