@@ -2,10 +2,10 @@ import {React,useState,useRef} from 'react'
 import axios from 'axios';
 import "../style.scss";
 
-import { useNavigate } from 'react-router-dom';
+
 
 const Register = ({setShowRegister}) => {
-  const navigate = useNavigate();
+
   const[success,setSuccess] = useState(false);
   const[failure,setFailure] = useState(false);
   const [error,setError] = useState("");
@@ -44,7 +44,7 @@ const Register = ({setShowRegister}) => {
      await axios.post("/users/register", newUser);
      setFailure(false);
       setSuccess(true);
-      // navigate('/login');
+     
     } catch (error) {
       console.log(error);
       setFailure(true);
@@ -58,7 +58,7 @@ const Register = ({setShowRegister}) => {
 
 <i className="fa-solid fa-x cancel" onClick={()=>setShowRegister(false)} ></i>
     <div className="logo">
-    <i class="fa-solid fa-location-dot fa-1.5x icon">
+    <i className="fa-solid fa-location-dot fa-1.5x icon">
 <h3>Map-Pin</h3>
 </i>
     </div>
