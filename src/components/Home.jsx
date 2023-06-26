@@ -109,7 +109,7 @@ const handleAddClick = ar =>{
     <div>
     <div className="navbar">
     <div className="iconFig">
-    <i class="fa-solid fa-location-dot fa-2x icon">
+    <i className="fa-solid fa-location-dot fa-2x icon">
 
     <h3>Map-Pin</h3>
     </i>
